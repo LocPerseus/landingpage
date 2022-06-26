@@ -18,15 +18,6 @@ a {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Jost", sans-serif;
-}
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -45,38 +36,31 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  text-transform: capitalize;
   position: relative;
-  color: #8e8b5c;;
+  color: #8e8b5c;
+  font-family: "Romana Becker";
+  font-weight: normal;
+  font-size: calc(39px + 2.135vw);
+  line-height: calc(50px + 2.031vw);
 }
 
-.section-title h2::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #47b2e4;
-  bottom: 0;
-  left: calc(50% - 20px);
+.section-title h6 {
+  font-family: "Lexend Deca";
+  font-size: calc(18px + 0.469vw);
+  line-height: calc(37px + 0.677vw);
+  color: #8e8b5c;
+  text-align: center;
+  max-width: 975px;
 }
 
 .section-title p {
+  font-family: "Lexend Deca";
+  font-weight: normal;
+  font-size: calc(18px + 0.469vw);
+  line-height: calc(37px + 0.677vw);
+  color: #8e8b5c;
+  opacity: 0.75;
   margin-bottom: 0;
 }
 
@@ -85,9 +69,10 @@ section {
 --------------------------------------------------------------*/
 .banner {
   width: 100%;
-  height: 110vh;
+  height: 70vh;
   background-image: url("../assets/img/banner.png");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100% 100%;
 }
 
@@ -129,4 +114,39 @@ section {
   color: #f9fcfe;
   font-size: 14px;
   margin-bottom: 40px;
+}
+
+.artist-img {
+  filter: grayscale(100%);
+}
+
+.btn-meet {
+  background-color: #4b342c !important;
+  border-color: #707070;
+}
+
+.block {
+  background: #4b342c;
+}
+
+.dual-img {
+  background: url(../assets/img/book.png) no-repeat right;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  top: 0;
+}
+
+.dual-content {
+  background: #00BCD4;
+  position: relative;
+}
+
+.quotes {
+  font-family: "SF Pro Display";
+  font-weight: 300;
+  font-size: calc(17px + 0.625vw);
+  line-height: calc(27px + 0.781vw);
+  color: #4b342c;
 }

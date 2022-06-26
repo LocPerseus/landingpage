@@ -11,12 +11,13 @@ const Artists = () => {
       <div className="container">
         <div className="section-title">
           <h2>The Angels Stands With Ukraine</h2>
-          <p>
-            Illustrated and Written by Ukrainian Artists and graphics designers{" "}
-          </p>
+          <h6>
+            <strong>Illustrated</strong> and <strong>Written</strong> by
+            Ukrainian Artists and graphics designers{" "}
+          </h6>
           <p>
             Ukrainian Angels is a non for profit children's book benefiting the
-            authors's heritage, roots, and giving back to the people of Ukraine.{" "}
+            authors's <br /> heritage, roots, and giving back to the people of Ukraine.
           </p>
         </div>
 
@@ -26,14 +27,14 @@ const Artists = () => {
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <Image src={ArtistImg} />
+            <Image className="artist-img" src={ArtistImg} />
           </div>
           <div
             className="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
             data-aos="fade-left"
             data-aos-delay="100"
           >
-            <p className="fst-italic">
+            <p className="fst-italic quotes">
               "These 46 pages depict a chance for us to speak, learn, and teach
               children about the war in a way that is sustainable, gentle, and
               bright. Bringing awareness to those who try to stop us from
@@ -73,6 +74,15 @@ const Artists = () => {
               <h4>Megumi Arai</h4>
               <p>The Ukrainian Angels's Illustrator and Contributor</p>
             </div>
+          </div>
+          <div className="text-center">
+            <a
+              className="btn btn-secondary btn-lg btn-meet"
+              href="#"
+              role="button"
+            >
+              Meet Our Artists
+            </a>
           </div>
         </div>
       </div>
