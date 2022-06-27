@@ -6,17 +6,19 @@ const Banner = () => {
       <div className="container">
         <div className="row">
           <div
-            className="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1 bg-banner"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h1>Ukrainian Angels</h1>
-            <h5>
+            <h2 style={{ color: "#8e8b5c" }}>Ukrainian Angels</h2>
+            <h6 className="banner-title">
               A Charity children’s book benefiting the people and community of
               Ukraine as they heal and glow.
-            </h5>
+            </h6>
             <div className="d-flex justify-content-center justify-content-lg-start">
-              <p>ALL PROFITS DIRECTLY BENEFIT THE CITIZENS OF UKRAINE</p>
+              <p className="banner-text">
+                ALL PROFITS DIRECTLY BENEFIT THE CITIZENS OF UKRAINE
+              </p>
             </div>
           </div>
         </div>

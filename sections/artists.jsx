@@ -10,7 +10,7 @@ const Artists = () => {
     <section className="artist">
       <div className="container">
         <div className="section-title">
-          <h2>The Angels Stands With Ukraine</h2>
+          <h2 style={{ color: "#8e8b5c" }}>The Angels Stands With Ukraine</h2>
           <h6>
             <strong>Illustrated</strong> and <strong>Written</strong> by
             Ukrainian Artists and graphics designers{" "}
@@ -40,8 +40,8 @@ const Artists = () => {
               bright. Bringing awareness to those who try to stop us from
               shining.
             </p>
-            <h3>Aleksandra Oleksyuk</h3>
-            <p>The Ukrainian Angels’s main Artist and Book Designer </p>
+            <p className="name-artist fw-bold">Aleksandra Oleksyuk</p>
+            <p className="name-artist">The Ukrainian Angels’s main Artist and Book Designer </p>
           </div>
         </div>
 
@@ -51,8 +51,8 @@ const Artists = () => {
               <Image src={Artist1Img} className="img-fluid" alt="" />
             </div>
             <div className="artist-info">
-              <h4>Aleksandra Godlevska</h4>
-              <p>The Ukrainian Angels’s Illustrator</p>
+              <h3 className="name-artist fw-bold">Aleksandra Godlevska</h3>
+              <p className="name-artist">The Ukrainian Angels’s Illustrator</p>
             </div>
           </div>
 
@@ -61,8 +61,8 @@ const Artists = () => {
               <Image src={Artist2Img} className="img-fluid" alt="" />
             </div>
             <div className="artist-info">
-              <h4>Anna Ishchenko </h4>
-              <p>The Ukrainian Angels’s Illustrator</p>
+              <h3 className="name-artist fw-bold">Anna Ishchenko </h3>
+              <p className="name-artist">The Ukrainian Angels’s Illustrator</p>
             </div>
           </div>
 
@@ -71,8 +71,8 @@ const Artists = () => {
               <Image src={Artist3Img} className="img-fluid" alt="" />
             </div>
             <div className="artist-info">
-              <h4>Megumi Arai</h4>
-              <p>The Ukrainian Angels's Illustrator and Contributor</p>
+              <h3 className="name-artist fw-bold">Megumi Arai</h3>
+              <p className="name-artist">The Ukrainian Angels's Illustrator and Contributor</p>
             </div>
           </div>
           <div className="text-center">
