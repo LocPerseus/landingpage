@@ -51,7 +51,7 @@ const Artists = () => {
               <Image src={Artist1Img} className="img-fluid" alt="" />
             </div>
             <div className="artist-info">
-              <h3 className="name-artist fw-bold">Aleksandra Godlevska</h3>
+              <p className="name-artist fw-bold">Aleksandra Godlevska</p>
               <p className="name-artist">The Ukrainian Angels’s Illustrator</p>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Artists = () => {
               <Image src={Artist2Img} className="img-fluid" alt="" />
             </div>
             <div className="artist-info">
-              <h3 className="name-artist fw-bold">Anna Ishchenko </h3>
+              <p className="name-artist fw-bold">Anna Ishchenko </p>
               <p className="name-artist">The Ukrainian Angels’s Illustrator</p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Artists = () => {
               <Image src={Artist3Img} className="img-fluid" alt="" />
             </div>
             <div className="artist-info">
-              <h3 className="name-artist fw-bold">Megumi Arai</h3>
+              <p className="name-artist fw-bold">Megumi Arai</p>
               <p className="name-artist">The Ukrainian Angels's Illustrator and Contributor</p>
             </div>
           </div>

@@ -30,6 +30,13 @@ h2 {
 h3 {
   font-family: "Romana Becker";
   font-weight: normal;
+  font-size: 53px;
+  line-height: 67px;
+}
+
+h4 {
+  font-family: "Romana Becker";
+  font-weight: normal;
   font-size: 46px;
   line-height: 59px;
 }
@@ -78,7 +85,7 @@ section {
 --------------------------------------------------------------*/
 .banner {
   width: 100%;
-  height: 80vh;
+  height: 110vh;
   background-image: url("../assets/img/banner.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -124,23 +131,18 @@ section {
 
 .artist .artist-item .artist-info {
   position: absolute;
-  left: 40px;
-  bottom: -20px;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: -2.5rem;
   z-index: 3;
-  right: 40px;
   transition: all 0.3s;
   background: #8e8b5c;
   padding: 10px 15px;
   border-radius: 0px;
 }
 
-.artist .artist-item .artist-info h3 {
-  color: #fff !important;
-}
-
 .artist .artist-item .artist-info p {
   color: #f9fcfe;
-  margin-bottom: 40px;
 }
 
 .artist-img {
@@ -198,8 +200,13 @@ section {
   }
 
   h3 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 26px;
   }
 
   p {
@@ -220,7 +227,7 @@ section {
   }
 
   .container {
-    padding: 0 49px;
+    padding: 0 25px;
   }
 
   .quotes {
@@ -242,6 +249,37 @@ section {
     position: relative !important;
     height: 300px !important;
   }
+
+  .bg-audio {
+    height: 30vh !important;
+  }
+
+  .bg-audio .play-btn {
+    height: 33px !important;
+    width: 33px !important;
+    font-size: 30px;
+    line-height: 78px;
+    display: inline-block;
+  }
+
+  .bg-audio h6 {
+    display: none !important;
+  }
+
+  .profit-title {
+    text-align: center !important;
+    text-transform: capitalize;
+  }
+
+  .benefit-item {
+    text-align: center;
+    /* bottom: -20rem;
+    padding: 8% 14% !important; */
+  }
+
+  .benefit-item a {
+    display: inline-block !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -257,15 +295,58 @@ section {
 /*--------------------------------------------------------------
 # Audio
 --------------------------------------------------------------*/
-.bg-cta .play-btn {
+.bg-audio {
+  height: 83vh;
+  background: url("../assets/img/audio-book.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg-audio .play-btn {
   height: 80px;
   width: 80px;
   font-size: 30px;
   line-height: 78px;
-  border-radius: 50%;
   display: inline-block;
-  -webkit-text-stroke: 2px #00bcd4;
-  -webkit-text-fill-color: transparent;
-  border: 2px solid #fff;
-  margin-top: 30px;
+}
+
+.bg-profit {
+  position: relative;
+  height: 70vh;
+  background: url("../assets/img/profit-bg.png") center center no-repeat;
+  background-position: 100% 100%;
+}
+
+.profit-title p {
+  opacity: 0.75;
+}
+
+.btn-donate {
+  background-color: #8e8b5c !important;
+  border-color: #8e8b5c !important;
+  text-transform: uppercase;
+}
+
+.bg-benefit {
+  position: relative;
+  top: -35px;
+  height: 120vh;
+  background: url("../assets/img/read-book.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.benefit-item {
+  position: relative;
+  background-color: #4b342c;
+  padding: 4% 4%;
+}
+
+.benefit-item p {
+  opacity: 0.75;
+}
+
+.bg-about {
+  position: relative;
+  top: -35px;
+  background-color: #dcdcdc;
+  background-size: 100% 100%;
 }
