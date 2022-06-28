@@ -1,31 +1,39 @@
+import Image from "next/image";
 import React from "react";
+import EBook from "../assets/img/ebook.png";
+import EmailIcon from "../assets/img/email-icon.svg";
+import CallIcon from "../assets/img/call-icon.svg";
 
 const About = () => {
   return (
-    <section bg-about>
+    <section className="bg-about">
       <div className="container-fluid">
         <div className="row position-relative">
-          <div className="col-lg-5 order-lg-1 order-2">
-            <div className="about-image-img-box">
-              <div className="row">
-                <div className="col-lg-12">
-                  <h2 className="about-image-head text-white">
-                    Giving Voice To The Voiceless
-                  </h2>
-                  <div className="description">
-                    <p className="text-white">
-                      Featuring line drawings. this book tells the unique
-                      perspective and story of current day Ukraine. All of these
-                      works were done in low lighting, cramped spaces, cold
-                      climates, and environments that would not normally spark
-                      creativity or even safety.
-                    </p>
-                  </div>
+          <div className="row">
+            <div className="col-lg-6 col-md-6">
+              <div className="about-description">
+                <h2 className="about-image-head">Where To Find Us!</h2>
+                <p className="fw-bold">Global Retails</p>
+                <p>
+                  This book will be available to Amazon, Powell’s Books,
+                  Books-A-Million, and Barnes & Noble, as well as Ingram, Baker
+                  & Taylor, NACSCORP, Bookazine, Diamond Comic, BPDI, Christian
+                  Book Distributors, and 50+ others.
+                </p>
+                <div className="d-flex flex-row bd-highlight mt-3 mb-1">
+                  <Image src={EmailIcon} />
+                  <p className="pt-2 ps-4">ukrainianangels@reachii.com</p>
+                </div>
+                <div className="d-flex text-align-center mt-3 mb-1">
+                  <Image src={CallIcon} />
+                  <p className="pt-3 ps-3">(888)922 6766 </p>
                 </div>
               </div>
             </div>
+            <div className="col-lg-6 col-md-6">
+              <Image src={EBook} />
+            </div>
           </div>
-          <div className="col-lg-5 padding-less img offset-lg-7 order-lg-2 order-1"></div>
         </div>
       </div>
     </section>

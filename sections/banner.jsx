@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <section className="banner d-flex align-items-center">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div
             className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1 bg-banner"
