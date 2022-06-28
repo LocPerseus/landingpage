@@ -368,6 +368,8 @@ section {
 }
 
 .bg-profit {
+  top: -4rem;
+  z-index: 1;
   position: relative;
   height: 90vh;
   background: url("../assets/img/profit-bg.png") center center no-repeat;
@@ -386,8 +388,9 @@ section {
 
 .bg-benefit {
   position: relative;
-  top: -6rem;
-  height: 100vh;
+  z-index: 0;
+  top: -19rem;
+  height: 130vh;
   background: url("../assets/img/read-book.png") center center no-repeat;
   background-size: 100% 100%;
 }
@@ -407,8 +410,8 @@ section {
 --------------------------------------------------------------*/
 .bg-about {
   position: relative;
-  top: -6rem;
-  background-color: #dcdcdc;
+  top: -30rem;
+  background: url("../assets/img/about.png") center center no-repeat;
   background-size: 100% 100%;
 }
 
