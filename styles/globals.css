@@ -86,12 +86,13 @@ section {
 .poster {
   background-image: url('../assets/img/12008.png');
   background-repeat: no-repeat;
-  background-position: center;
-  height: 494px;
+  background-position: center center;
   color: white;
   align-content: center;
   width: 100%;
   position: relative;
+  background-size: cover;
+  height: 90vh;
 }
 .poster .content {
   max-width: 1620px;
