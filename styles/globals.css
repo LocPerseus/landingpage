@@ -50,6 +50,27 @@ p {
 }
 
 /*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.btn-preview {
+  background-color: #f8785d !important;
+  border-color: #f8785d !important;
+  
+}
+
+.btn-product {
+  background-color: #4b342c !important;
+  border-color: #4b342c !important;
+
+}
+
+.btn-message {
+  background-color: #fff !important;
+  color: #f8785d !important;
+  border-color: #fff !important;
+}
+
+/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
@@ -217,6 +238,10 @@ section {
     margin-bottom: 0;
   }
 
+  .btn-detail {
+    display: none !important;
+  }
+
   .banner-text {
     font-size: 12px;
     line-height: 19px;
@@ -316,7 +341,7 @@ section {
   position: relative;
   height: 90vh;
   background: url("../assets/img/profit-bg.png") center center no-repeat;
-  background-position: 100% 100%;
+  background-position: cover;
 }
 
 .profit-title p {
@@ -331,7 +356,7 @@ section {
 
 .bg-benefit {
   position: relative;
-  top: -35px;
+  top: -6rem;
   height: 100vh;
   background: url("../assets/img/read-book.png") center center no-repeat;
   background-size: 100% 100%;
@@ -352,7 +377,7 @@ section {
 --------------------------------------------------------------*/
 .bg-about {
   position: relative;
-  top: -35px;
+  top: -6rem;
   background-color: #dcdcdc;
   background-size: 100% 100%;
 }
@@ -368,4 +393,16 @@ section {
   line-height: 27px !important;
   color: #4b342c;
   opacity: 0.75;
+}
+
+.banner .btn {
+  border-radius: 40px;
+  padding: 20px 30px;
+  font-family: "Lexend Deca";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .1em;
+  text-transform: capitalize;
+  cursor: pointer;
 }
