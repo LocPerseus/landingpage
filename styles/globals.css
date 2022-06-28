@@ -5,6 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: transparent;
+  font-size: 18px;
 }
 
 a {
@@ -18,391 +19,117 @@ a {
   padding: 0;
 }
 
-h2 {
-  text-transform: capitalize;
-  position: relative;
-  font-family: "Romana Becker";
-  font-weight: normal;
-  font-size: 74px;
-  line-height: 80px;
-}
-
-h3 {
-  font-family: "Romana Becker";
-  font-weight: normal;
-  font-size: 53px;
-  line-height: 67px;
-}
-
-h4 {
-  font-family: "Romana Becker";
-  font-weight: normal;
-  font-size: 46px;
-  line-height: 59px;
-}
-
-p {
-  font-family: "Lexend Deca";
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 37px;
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Buttons
---------------------------------------------------------------*/
-.btn-preview {
-  background-color: #f8785d !important;
-  border-color: #f8785d !important;
-  
-}
-
-.btn-product {
-  background-color: #4b342c !important;
-  border-color: #4b342c !important;
-
-}
-
-.btn-message {
-  background-color: #fff !important;
-  color: #f8785d !important;
-  border-color: #fff !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Jost', sans-serif;
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 50px 0;
   overflow: hidden;
-}
-
-.section-bg {
-  background-color: #f3f5fa;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-title h6 {
-  font-family: "Lexend Deca";
-  font-size: calc(18px + 0.469vw);
-  line-height: 120%;
-  color: #8e8b5c;
-  max-width: 975px;
-}
-
-.section-title p {
-  color: #8e8b5c;
-  opacity: 0.75;
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Banner
---------------------------------------------------------------*/
-.banner {
-  width: 100%;
-  height: 110vh;
-  background-image: url("../assets/img/banner.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-}
-
-.banner .container {
-  padding-top: 72px;
-}
-
-.banner .container .bg-banner {
-  background: #ffffffb0;
-  padding: 2.5rem;
-}
-
-.banner-title {
-  font-family: Roboto;
-  font-size: calc(17px + 0.625vw);
-  line-height: 120%;
-  color: #8e8b5c;
-  margin-bottom: 25px;
-}
-
-.banner-text {
-  text-transform: uppercase;
-  font-family: "Lexend Deca";
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  color: #4b342c;
 }
 
 /*--------------------------------------------------------------
 # Artists
 --------------------------------------------------------------*/
-.artist-container {
-  padding-top: 30px;
+.header > h1 {
+  font-family: 'Romana Becker';
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 89px;
+  text-align: center;
+  color: #8e8b5c;
 }
 
-.artist .artist-item {
-  margin-bottom: 60px;
+.artist {
+  padding: 50px 25px;
 }
 
-.artist .artist-item .artist-info {
-  position: absolute;
-  left: 1.5rem;
-  right: 1.5rem;
-  bottom: -2.5rem;
-  z-index: 3;
-  transition: all 0.3s;
-  background: #8e8b5c;
-  padding: 10px 15px;
-  border-radius: 0px;
+.artist .container {
+  margin-top: 60px;
 }
 
-.artist .artist-item .artist-info p {
-  color: #f9fcfe;
+.artist-info-header > * {
+  margin: 0px;
+  font-family: 'Romana Becker';
+  font-size: 40px;
+  line-height: 36px;
+  text-align: left;
+  font-weight: normal;
+  color: #8e8b5c;
 }
 
-.artist-img {
-  filter: grayscale(100%);
+.artist-info-header p {
+  margin-top: -15px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Segoe UI';
 }
 
-.btn-meet {
-  background-color: #4b342c !important;
-  border-color: #707070;
-}
-
-.block {
-  background: #4b342c;
-}
-
-.bg-service {
-  background-color: #8e8b5c;
-}
-
-.dual-content {
-  background: #00BCD4;
-  position: relative;
-}
-
-.quotes {
-  font-family: "SF Pro Display";
-  font-size: 29px;
-  line-height: 42px;
-  color: #4b342c;
-  margin-bottom: 24px;
-}
-
-.name-artist {
-  font-family: "Lexend Deca";
+.artist-info-body {
+  font-family: 'Lexend Deca';
+  font-weight: normal;
   text-align: left;
   color: #4b342c;
-  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  opacity: 0.75;
+  padding-top: 10px;
 }
 
-.service-image .container-fluid .padding-less.img {
-  background: url("../assets/img/book.png") scroll center no-repeat;
-  background-size: cover;
-  position: absolute;
-  height: 100%;
+.poster {
+  background-image: url('../assets/img/12008.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 494px;
+  color: white;
+  align-content: center;
+  width: 100%;
+  position: relative;
+}
+.poster .content {
+  max-width: 1620px;
 }
 
-.service-image .service-image-img-box {
-  padding: 12% 10%;
+.poster .content > p {
+  font-family: 'Romana Becker';
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 59px;
+  color: #fff;
+  margin-bottom: 0;
 }
 
+.footer > p + {
+  max-width: 1620px;
+}
+
+/*=========*/
 @media (max-width: 992px) {
-  h2 {
-    font-size: 24px;
-    line-height: 26px;
-  }
-
-  h3 {
-    font-size: 24px;
-    line-height: 26px;
-  }
-
-  h4 {
-    font-size: 24px;
-    line-height: 26px;
-  }
-
-  p {
-    font-family: "Lexend Deca";
+  .footer > span {
+    font-family: 'Lexend Deca';
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 0;
-  }
-
-  .btn-detail {
-    display: none !important;
-  }
-
-  .banner-text {
-    font-size: 12px;
-    line-height: 19px;
-  }
-
-  .name-artist {
     text-align: center;
+    color: #fff;
   }
-
-  .container {
-    padding: 0 25px;
-  }
-
-  .quotes {
-    font-size: 17px;
-    line-height: 27px;
-    text-align: center;
-  }
-
-  .service-image-img-box {
-    text-align: center;
-  }
-
-  .service-image .service-image-content {
-    text-align: left !important;
-  }
-
-  .service-image .padding-less {
-    order: 1;
-    position: relative !important;
-    height: 300px !important;
-  }
-
-  .bg-audio {
-    height: 30vh !important;
-  }
-
-  .bg-audio .play-btn {
-    height: 33px !important;
-    width: 33px !important;
-    font-size: 30px;
-    line-height: 78px;
-    display: inline-block;
-  }
-
-  .bg-audio h6 {
-    display: none !important;
-  }
-
-  .profit-title {
-    text-align: center !important;
-    text-transform: capitalize;
-  }
-
-  .benefit-item {
-    text-align: center;
-  }
-
-  .benefit-item a {
-    display: inline-block !important;
-  }
-
-  .about-description p {
+  .artist-info-body {
     font-size: 18px;
-    line-height: 24px;
   }
-}
-
-@media (min-width: 992px) {
-  .order-lg-1 {
-    order: 1 !important;
+  .header > h1 {
+    font-size: 39px;
   }
-}
-
-.order-1 {
-  order: 1 !important;
-}
-
-/*--------------------------------------------------------------
-# Audio
---------------------------------------------------------------*/
-.bg-audio {
-  height: 83vh;
-  background: url("../assets/img/audio-book.png") center center no-repeat;
-  background-size: 100% 100%;
-}
-
-.bg-audio .play-btn {
-  height: 80px;
-  width: 80px;
-  font-size: 30px;
-  line-height: 78px;
-  display: inline-block;
-}
-
-.bg-profit {
-  position: relative;
-  height: 90vh;
-  background: url("../assets/img/profit-bg.png") center center no-repeat;
-  background-position: cover;
-}
-
-.profit-title p {
-  opacity: 0.75;
-}
-
-.btn-donate {
-  background-color: #8e8b5c !important;
-  border-color: #8e8b5c !important;
-  text-transform: uppercase;
-}
-
-.bg-benefit {
-  position: relative;
-  top: -6rem;
-  height: 100vh;
-  background: url("../assets/img/read-book.png") center center no-repeat;
-  background-size: 100% 100%;
-}
-
-.benefit-item {
-  position: relative;
-  background-color: #4b342c;
-  padding: 4% 4%;
-}
-
-.benefit-item p {
-  opacity: 0.75;
-}
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.bg-about {
-  position: relative;
-  top: -6rem;
-  background-color: #dcdcdc;
-  background-size: 100% 100%;
-}
-
-.about-description {
-  padding: 12% 10%;
-}
-
-.about-description p {
-  font-family: "Lexend Deca";
-  font-weight: normal;
-  font-size: 20px !important;
-  line-height: 27px !important;
-  color: #4b342c;
-  opacity: 0.75;
-}
-
-.banner .btn {
-  border-radius: 40px;
-  padding: 20px 30px;
-  font-family: "Lexend Deca";
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: .1em;
-  text-transform: capitalize;
-  cursor: pointer;
+  .artist-info-header > * {
+    font-size: 25px;
+  }
+  .artist-info-header p {
+    font-size: 16px;
+  }
 }
