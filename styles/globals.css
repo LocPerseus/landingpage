@@ -226,7 +226,7 @@ section {
 
 .service-image .container-fluid .padding-less.img {
   background: url("../assets/img/book.png") scroll center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   position: absolute;
   height: 100%;
 }
@@ -314,6 +314,7 @@ section {
   height: 940px;
   background: url("../assets/img/about.png") center center no-repeat;
   background-size: cover;
+  margin-top: 14rem;
 }
 
 .bg-about {
@@ -466,6 +467,10 @@ section {
 
   .bg-benefit-content a {
     display: inline-block !important;
+  }
+  
+  .about {
+    margin-top: 0;
   }
 
   .about-description p {
