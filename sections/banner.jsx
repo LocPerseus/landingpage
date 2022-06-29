@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <section className="banner d-flex align-items-center"></section>
+      <section className="banner"></section>
       <section className="bg-banner">
         <div className="container">
           <div className="row">
@@ -12,8 +12,8 @@ const Banner = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div className="bg-content">
-                <h2 style={{ color: "#8e8b5c" }}>Ukrainian Angels</h2>
+              <div className="bg-banner-content">
+                <h1 style={{ color: "#8e8b5c" }}>Ukrainian Angels</h1>
                 <h6 className="banner-title">
                   A Charity children’s book benefiting the people and community
                   of Ukraine as they heal and glow.

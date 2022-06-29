@@ -18,6 +18,13 @@ a {
   padding: 0;
 }
 
+h1 {
+  font-family: "Romana Becker";
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 89px;
+}
+
 h2 {
   text-transform: capitalize;
   position: relative;
@@ -39,6 +46,13 @@ h4 {
   font-weight: normal;
   font-size: 46px;
   line-height: 59px;
+}
+
+h6 {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
 }
 
 p {
@@ -70,11 +84,17 @@ p {
   border-color: #fff !important;
 }
 
+.btn-donate {
+  background-color: #8e8b5c !important;
+  border-color: #8e8b5c !important;
+  text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 50px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -85,20 +105,15 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  color: #8e8b5c;
 }
 
-.section-title h6 {
-  font-family: "Lexend Deca";
-  font-size: calc(18px + 0.469vw);
-  line-height: 120%;
-  color: #8e8b5c;
-  max-width: 975px;
+.artist-description {
+  max-width: 900px !important;
 }
 
 .section-title p {
-  color: #8e8b5c;
-  opacity: 0.75;
-  margin-bottom: 0;
+  max-width: 1200px;
 }
 
 /*--------------------------------------------------------------
@@ -113,11 +128,14 @@ section {
   background-size: 100% 100%;
 }
 
-/* .banner .container {
-  padding-top: 72px;
-} */
+.bg-banner {
+  position: relative;
+  margin-top: -45rem;
+  margin-bottom: 20rem;
+  z-index: 1;
+}
 
-.bg-banner .container .bg-content {
+.bg-banner .container .bg-banner-content {
   background: #fff;
   opacity: 0.88;
   padding: 1.2rem;
@@ -142,22 +160,15 @@ section {
   color: #4b342c;
 }
 
-.bg-banner {
-  position: relative;
-  margin-top: -45rem;
-  margin-bottom: 20rem;
-  z-index: 1;
-}
-
 /*--------------------------------------------------------------
 # Artists
 --------------------------------------------------------------*/
 .artist-container {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .artist .artist-item {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .artist .artist-item .artist-info {
@@ -224,7 +235,121 @@ section {
   padding: 12% 10%;
 }
 
+.order-1 {
+  order: 1 !important;
+}
+
+/*--------------------------------------------------------------
+# Audio
+--------------------------------------------------------------*/
+.bg-audio {
+  height: 83vh;
+  background: url("../assets/img/audio-book.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg-audio .play-btn {
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  line-height: 78px;
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+# Profit
+--------------------------------------------------------------*/
+.profit {
+  z-index: 1;
+  height: 500px;
+  background: url("../assets/img/profit-bg.png") center center no-repeat;
+}
+
+.bg-profit {
+  position: relative;
+  margin-top: -28rem;
+  z-index: 2;
+}
+
+.bg-profit-content p {
+  opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
+# Benefit
+--------------------------------------------------------------*/
+.benefit {
+  z-index: 0;
+  height: 1124px;
+  background: url("../assets/img/read-book.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg-benefit {
+  position: relative;
+  margin-top: -58rem;
+}
+
+.bg-banner {
+  position: relative;
+  margin-top: -45rem;
+  margin-bottom: 20rem;
+  z-index: 1;
+}
+
+.bg-benefit .container .bg-benefit-content {
+  background: #4b342c;
+  padding: 2.4rem;
+  border-radius: 10px;
+}
+
+.bg-benefit-content p {
+  opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  height: 940px;
+  background: url("../assets/img/about.png") center center no-repeat;
+  background-size: cover;
+}
+
+.bg-about {
+  position: relative;
+  margin-top: -48rem;
+}
+
+.about-description {
+  font-family: "Lexend Deca";
+  font-size: 20px !important;
+  line-height: 27px !important;
+  color: #4b342c;
+  opacity: 0.75;
+}
+
+.bg-banner .btn {
+  border-radius: 40px;
+  padding: 20px 30px;
+  font-family: "Lexend Deca";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .1em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
 @media (max-width: 992px) {
+  h1 {
+    font-size: 39px;
+    line-height: 50px;
+  }
+
   h2 {
     font-size: 24px;
     line-height: 26px;
@@ -236,16 +361,29 @@ section {
   }
 
   h4 {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h6 {
+    font-size: 17px;
+    line-height: 27px;
   }
 
   p {
-    font-family: "Lexend Deca";
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 0;
+  }
+
+  .btn-message {
+    background: #4b342c !important;
+    color: #fff !important;
+  }
+
+  .section-title h1 {
+    font-size: 24px;
+    line-height: 50px;
   }
 
   .banner {
@@ -321,16 +459,12 @@ section {
     display: none !important;
   }
 
-  .profit-title {
-    text-align: center !important;
-    text-transform: capitalize;
-  }
-
-  .benefit-item {
+  .bg-benefit .container .bg-benefit-content {
+    margin-top: 50rem;
     text-align: center;
   }
 
-  .benefit-item a {
+  .bg-benefit-content a {
     display: inline-block !important;
   }
 
@@ -346,96 +480,18 @@ section {
   }
 }
 
-.order-1 {
-  order: 1 !important;
-}
+@media (max-width: 1200px) {
+  .bg-profit .container .col-lg-12 {
+    text-align: center;
+    justify-content: center !important;
+  }
 
-/*--------------------------------------------------------------
-# Audio
---------------------------------------------------------------*/
-.bg-audio {
-  height: 83vh;
-  background: url("../assets/img/audio-book.png") center center no-repeat;
-  background-size: 100% 100%;
-}
+  .bg-profit-content {
+    text-transform: capitalize;
+  }
 
-.bg-audio .play-btn {
-  height: 80px;
-  width: 80px;
-  font-size: 30px;
-  line-height: 78px;
-  display: inline-block;
-}
-
-.bg-profit {
-  top: -4rem;
-  z-index: 1;
-  position: relative;
-  height: 90vh;
-  background: url("../assets/img/profit-bg.png") center center no-repeat;
-  background-position: cover;
-}
-
-.profit-title p {
-  opacity: 0.75;
-}
-
-.btn-donate {
-  background-color: #8e8b5c !important;
-  border-color: #8e8b5c !important;
-  text-transform: uppercase;
-}
-
-.bg-benefit {
-  position: relative;
-  z-index: 0;
-  top: -19rem;
-  height: 130vh;
-  background: url("../assets/img/read-book.png") center center no-repeat;
-  background-size: 100% 100%;
-}
-
-.benefit-item {
-  position: relative;
-  background-color: #4b342c;
-  padding: 4% 4%;
-}
-
-.benefit-item p {
-  opacity: 0.75;
-}
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.bg-about {
-  position: relative;
-  top: -30rem;
-  background: url("../assets/img/about.png") center center no-repeat;
-  background-size: 100% 100%;
-}
-
-.about-description {
-  padding: 12% 10%;
-}
-
-.about-description p {
-  font-family: "Lexend Deca";
-  font-weight: normal;
-  font-size: 20px !important;
-  line-height: 27px !important;
-  color: #4b342c;
-  opacity: 0.75;
-}
-
-.bg-banner .btn {
-  border-radius: 40px;
-  padding: 20px 30px;
-  font-family: "Lexend Deca";
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: .1em;
-  text-transform: capitalize;
-  cursor: pointer;
+  .bg-about .container .col-lg-12 {
+    text-align: center;
+    justify-content: center !important;
+  }
 }

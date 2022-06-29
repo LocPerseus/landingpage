@@ -10,12 +10,12 @@ const Artists = () => {
     <section className="artist">
       <div className="container">
         <div className="section-title">
-          <h2 style={{ color: "#8e8b5c" }}>The Angels Stands With Ukraine</h2>
-          <h6>
+          <h1 style={{ color: "#8e8b5c" }}>The Angels Stands With Ukraine</h1>
+          <p className="artist-description">
             <strong>Illustrated</strong> and <strong>Written</strong> by
             Ukrainian Artists and graphics designers{" "}
-          </h6>
-          <p>
+          </p>
+          <p style={{opacity: 0.75}}>
             Ukrainian Angels is a non for profit children's book benefiting the
             authors's <br /> heritage, roots, and giving back to the people of Ukraine.
           </p>
